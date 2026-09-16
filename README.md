@@ -29,28 +29,13 @@ The framework combines satellite-derived surface energy balance physics (SEBAL-l
 2. **`notebooks/02_OSM_morphology.ipynb`** — Extraction of urban morphology metrics (building coverage ratio, green/water fraction, sky view factor) from OpenStreetMap at a 39,574-cell grid.
 3. **`notebooks/03_ML_modeling.ipynb`** — XGBoost regression (21 features) trained to predict LST, SHAP-based driver attribution, composite Heat Stress Index construction, and scenario-based cooling-intervention simulation and spatial optimization.
 
-## Key Results
-
-- **Model performance**: XGBoost regression, R² = 0.906, RMSE = 0.89 °C (21 predictor variables)
-- **LST range**: 31.8–55.2 °C (mean 46.8 °C); mean Bowen ratio 4.6 and mean net radiation 421 W/m², confirming sensible-heat-dominated urban heat island behavior
-- **Top SHAP drivers**: surface albedo, net radiation (Rn), NDBI, NDMI, ground heat flux (G)
-- **Hotspots**: Composite Heat Stress Index (LST + Bowen ratio) identifies 13,863 hotspot pixels (top 20%), forming an ~83 km² contiguous thermal hotspot in Ahmedabad's dense historic core
-- **LULC composition**: Built-up 45.5%, Cropland 34.5%, Tree cover 12.0%, Shrubland 4.1%, Barren 1.6%, Grassland 1.3%, Water 1.1%
-- **Urban morphology (OSM)**: 90,908 buildings, 120,929 street segments, 396 green spaces, 224 water bodies; mean building coverage ratio 0.045, mean sky view factor 0.995
+## Key Results - Please refer the COMPLETE_RESULTS.txt file in the results folder. 
+| **Model performance** | **LST Range**| **TOP SHAP Drivers**|** Hotspots**| **LULC Composition**| **Urban Morphology (OSM)**|
 
 ### Cooling Intervention Simulation (hotspot zones)
-
-| Intervention | Mean cooling | Max cooling |
-|---|---|---|
-| Urban greening | 1.54 °C | 6.34 °C |
-| Water body expansion | 1.32 °C | 9.64 °C |
-| Cool roofing | 0.57 °C | 12.05 °C |
-| **Combined** | **4.70 °C** | **24.43 °C** |
-
 Spatial optimization identifies 9,192 priority pixels with cooling potential > 3 °C, guiding ward-level heat mitigation planning.
 
 ## Repository Structure
-
 ```
 notebooks/    Analysis notebooks (LST processing, OSM morphology, ML modeling)
 data/         Urban morphology dataset (amd_morphology.csv)
