@@ -1,7 +1,5 @@
-
-ISRO BAH 2026 — PS1 URBAN HEAT MITIGATION
 AHMEDABAD AMC — FINAL RESULTS (NDMI-updated)
-=============================================
+
 Date       : Summer 2024 (April–June)
 Resolution : 100m × 100m
 Clean pixels: 69,312
@@ -52,6 +50,4 @@ Cool roofs     : mean=0.57°C  max=12.05°C  >1°C in 31% pixels
 Water bodies   : mean=1.32°C  max=9.64°C   >1°C in 52% pixels
 Combined       : mean=4.70°C  max=24.43°C  >1°C in 93% pixels
 
-GRAND FINALE ADDITIONS (planned):
-  ECOSTRESS LST fusion, GHSL SVF, InVEST cross-validation,
-  SOLWEIG Tmrt, physics-penalized loss, Streamlit dashboard
+
