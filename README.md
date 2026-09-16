@@ -60,17 +60,6 @@ models/       Trained XGBoost model (lst_model_final.pkl)
 results/      Text summaries of key findings, SHAP analysis, scenario results
 ```
 
-> Note: The full LST/spectral-index dataset (`amd_final_outputs.csv`, ~18 MB), raster layers (GeoTIFFs), result figures, and the interactive Streamlit dashboard are maintained separately due to size; see the project's Google Drive / dashboard link for the complete dataset.
 
-## Status
 
-Abstract accepted for presentation at an MDPI international online conference, October 2026.
 
-## Author
-
-Poornima Suthar, L.D. College of Engineering (LDCE), Ahmedabad — GTU
-Supervised by Prof. Bina Patel
-
-## License
-
-TBD
