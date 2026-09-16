@@ -30,7 +30,7 @@ The framework combines satellite-derived surface energy balance physics (SEBAL-l
 3. **`notebooks/03_ML_modeling.ipynb`** — XGBoost regression (21 features) trained to predict LST, SHAP-based driver attribution, composite Heat Stress Index construction, and scenario-based cooling-intervention simulation and spatial optimization.
 
 ## Key Results - Please refer the COMPLETE_RESULTS.txt file in the results folder. 
-| **Model performance** | **LST Range**| **TOP SHAP Drivers**|** Hotspots**| **LULC Composition**| **Urban Morphology (OSM)**|
+| **Model performance** | **LST Range**| **TOP SHAP Drivers**| **Hotspots** | **LULC Composition**| **Urban Morphology (OSM)**|
 
 ### Cooling Intervention Simulation (hotspot zones)
 Spatial optimization identifies 9,192 priority pixels with cooling potential > 3 °C, guiding ward-level heat mitigation planning.
