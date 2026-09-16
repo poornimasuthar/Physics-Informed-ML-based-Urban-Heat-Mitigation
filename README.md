@@ -1,7 +1,5 @@
 # Physics-Informed Explainable ML for Urban Heat Mitigation — Ahmedabad
 
-**ISRO Bharatiya Antariksh Hackathon (BAH) 2026 — Problem Statement 1 (Urban Heat Mitigation)**
-
 A physics-informed, explainable machine learning framework for Surface Urban Heat Island (SUHI) hotspot detection, driver attribution, and cooling-strategy optimization, applied to Ahmedabad, a rapidly urbanizing semi-arid city.
 
 ## Overview
