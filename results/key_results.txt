@@ -1,8 +1,6 @@
-KEY RESULTS — ISRO BAH 2026 PS1
-================================
 R²=0.9059  RMSE=0.8934°C  Features=21
 LST mean=46.76°C  max=55.20°C  min=31.75°C
-Bowen ratio=4.60 (UHI confirmed)
+Bowen ratio=4.60 
 Built-up=45.5%  Tree cover=12.0%  Green fraction=1.2%
 Combined cooling: mean=4.70°C  max=24.43°C
 Priority zones: 9,192 pixels (>3°C cooling potential)
