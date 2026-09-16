@@ -1,0 +1,25 @@
+
+SCENARIO SIMULATION RESULTS
+============================
+Model: XGBoost R²=0.916 RMSE=0.84°C
+Hotspot pixels (top 20% HSI): 13,863
+HSI threshold: 53.2
+
+COOLING PREDICTIONS IN HOTSPOT ZONES:
+──────────────────────────────────────
+Urban Greening  : mean=1.54°C  max=6.34°C
+Cool Roofs      : mean=0.57°C  max=12.05°C
+Water Bodies    : mean=1.32°C  max=9.64°C
+Combined        : mean=4.70°C  max=24.43°C
+
+OPTIMAL STRATEGY:
+Combined intervention achieves highest cooling.
+Priority zones identified (>3°C cooling potential).
+Spatial placement maps generated at 100m resolution.
+
+PROPOSAL HEADLINE:
+"Combined urban greening + cool roofs + water body
+interventions predict mean cooling of
+4.7°C in Ahmedabad hotspot zones,
+with maximum cooling of 24.4°C
+at priority intervention sites."

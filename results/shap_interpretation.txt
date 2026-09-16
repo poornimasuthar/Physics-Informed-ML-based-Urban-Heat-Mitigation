@@ -1,0 +1,27 @@
+SHAP ANALYSIS — NDMI-UPDATED MODEL
+====================================
+Model: XGBoost | R²=0.9059 | RMSE=0.8934°C | Features=21
+
+TOP 10 DRIVERS:
+   1. albedo               2.1516
+   2. Rn                   1.9508
+   3. NDBI                 0.4432
+   4. NDMI                 0.4286
+   5. G                    0.3726
+   6. MNDWI                0.2003
+   7. wind_speed           0.1971
+   8. T2m_C                0.1264
+   9. SVF                  0.0933
+  10. LE                   0.0769
+
+INTERVENTION IMPLICATIONS:
+  albedo    → Cool roofs: raise surface reflectivity
+  Rn        → Physics validated as energy driver
+  NDBI      → Reduce built-up density
+  NDMI      → Surface moisture deficit drives heating
+  bowen     → Sensible heat dominance confirms UHI
+  green_frac→ Urban greening priority zones
+  LULC      → Built-up class drives highest LST
+  T2m_C     → Atmospheric heat load feedback
+  BCR       → Building coverage = heat retention
+  wind_speed→ Low ventilation worsens UHI

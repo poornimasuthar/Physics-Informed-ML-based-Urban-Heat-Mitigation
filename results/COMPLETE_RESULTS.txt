@@ -1,0 +1,57 @@
+
+ISRO BAH 2026 — PS1 URBAN HEAT MITIGATION
+AHMEDABAD AMC — FINAL RESULTS (NDMI-updated)
+=============================================
+Date       : Summer 2024 (April–June)
+Resolution : 100m × 100m
+Clean pixels: 69,312
+
+INPUT DATASETS (all PS requirements covered)
+───────────────────────────────────────────
+Landsat 8 LST        ✓  mean=46.76°C  max=55.20°C  min=31.75°C
+Sentinel-2 indices   ✓  NDVI, NDBI, NDWI, MNDWI, NDMI
+LULC                 ✓  ESA WorldCover 2021
+ERA5 meteorology     ✓  T2m=33.2°C  RH=33.1%  Wind=1.84m/s
+OSM morphology       ✓  BCR, green_frac, water_frac, SVF
+SEBAL-lite physics   ✓  Rn, G, H, LE, Bowen, albedo, emissivity
+
+LULC COMPOSITION
+─────────────────────────────────────────────
+Built-up   : 45.5%  Cropland : 34.5%
+Tree cover : 12.0%  Shrubland:  4.1%
+Barren     :  1.6%  Grassland:  1.3%
+Water      :  1.1%
+
+PHYSICS (SEBAL-lite)
+─────────────────────────────────────────────
+Rn=420.68 W/m²  G=42.07 W/m²
+H=284.26 W/m²   LE=94.35 W/m²
+Bowen ratio=4.60 (dominant sensible heat — UHI confirmed)
+
+FINAL ML MODEL — XGBoost (21 features)
+─────────────────────────────────────────────
+R²   = 0.9059
+RMSE = 0.8934 °C
+
+TOP 10 DRIVERS (SHAP):
+   1. albedo               2.1516
+   2. Rn                   1.9508
+   3. NDBI                 0.4432
+   4. NDMI                 0.4286
+   5. G                    0.3726
+   6. MNDWI                0.2003
+   7. wind_speed           0.1971
+   8. T2m_C                0.1264
+   9. SVF                  0.0933
+  10. LE                   0.0769
+
+SCENARIO COOLING (hotspot zones — top 20% HSI)
+─────────────────────────────────────────────
+Urban greening : mean=1.54°C  max=6.34°C   >1°C in 85% pixels
+Cool roofs     : mean=0.57°C  max=12.05°C  >1°C in 31% pixels
+Water bodies   : mean=1.32°C  max=9.64°C   >1°C in 52% pixels
+Combined       : mean=4.70°C  max=24.43°C  >1°C in 93% pixels
+
+GRAND FINALE ADDITIONS (planned):
+  ECOSTRESS LST fusion, GHSL SVF, InVEST cross-validation,
+  SOLWEIG Tmrt, physics-penalized loss, Streamlit dashboard
