@@ -1,13 +1,13 @@
 
 OSM URBAN MORPHOLOGY — AHMEDABAD AMC
-=====================================
+
 Buildings  : 90908
 Streets    : 120929
 Green spaces: 396
 Water bodies: 224
 
 GRID MORPHOLOGY STATS
-=====================
+
 Total cells : 39574
 Mean BCR    : 0.045
 Mean Green  : 0.012
