@@ -1,17 +1,16 @@
-AHMEDABAD AMC — FINAL RESULTS (NDMI-updated)
-
+AHMEDABAD AMC — FINAL RESULTS 
 Date       : Summer 2024 (April–June)
 Resolution : 100m × 100m
 Clean pixels: 69,312
 
-INPUT DATASETS (all PS requirements covered)
+INPUT DATASETS 
 ───────────────────────────────────────────
-Landsat 8 LST        ✓  mean=46.76°C  max=55.20°C  min=31.75°C
-Sentinel-2 indices   ✓  NDVI, NDBI, NDWI, MNDWI, NDMI
-LULC                 ✓  ESA WorldCover 2021
-ERA5 meteorology     ✓  T2m=33.2°C  RH=33.1%  Wind=1.84m/s
-OSM morphology       ✓  BCR, green_frac, water_frac, SVF
-SEBAL-lite physics   ✓  Rn, G, H, LE, Bowen, albedo, emissivity
+Landsat 8 LST          mean=46.76°C  max=55.20°C  min=31.75°C
+Sentinel-2 indices    NDVI, NDBI, NDWI, MNDWI, NDMI
+LULC                  ESA WorldCover 2021
+ERA5 meteorology      T2m=33.2°C  RH=33.1%  Wind=1.84m/s
+OSM morphology        BCR, green_frac, water_frac, SVF
+SEBAL-lite physics    Rn, G, H, LE, Bowen, albedo, emissivity
 
 LULC COMPOSITION
 ─────────────────────────────────────────────
